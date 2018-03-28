@@ -38,7 +38,7 @@ snapshot: holds some data about the particular draggable item. For example, snap
 Here's an example of a droppable component written as simply as I can manage.
 In the project, you will see that we use the map command inside of a droppable component to change an array of objects into many draggable objects.
 But there is no draggable object in this droppable component right now.
-
+`
 <Droppable droppableId="whateverNameYouWant">
   {(provided, snapshot) => (
               <div ref={provided.innerRef} >
@@ -46,12 +46,13 @@ But there is no draggable object in this droppable component right now.
               </div>
   )}
   </Droppable>
-
+`
 
   Here's an example of a draggable component written as simply as I can manage.
   In the project, you will see that we use the map command to change an array of objects into many draggable objects.
   But this is just one draggable object created on its own.
 
+`
   <Draggable key={1} draggableId={1} index={0}>
     {(provided, snapshot) => (
       <div>
@@ -66,10 +67,11 @@ But there is no draggable object in this droppable component right now.
       </div>
     )}
   </Draggable>
-
+`
 
 Here's an example of a droppable component with a draggable component inside of it.
 
+`
 <Droppable droppableId="whateverNameYouWant">
   {(provided, snapshot) => (
               <div ref={provided.innerRef} >
@@ -93,3 +95,4 @@ Here's an example of a droppable component with a draggable component inside of 
               </div>
   )}
   </Droppable>
+`
